@@ -1,3 +1,5 @@
+package java8
+
 import java.util.stream.Collectors.toList
 
 class JavaStreams {
