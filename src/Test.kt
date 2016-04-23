@@ -22,20 +22,7 @@ class Hello {
   }
 }
 
-fun int2int(x: Int): Int = x + 1
-
 fun main(args: Array<String>) {
-  var x: (Int) -> Int = { 1 + it }
-  println(x(2))
-
-  x = ::int2int
-  println(x(2))
-
-  x = fun(x) = x + 2
-  println(x(2))
-
-  println((Hello::class as Any).javaClass)
-
   val adHoc = object {
     var x: Int = 0
     var y: Int = 0
