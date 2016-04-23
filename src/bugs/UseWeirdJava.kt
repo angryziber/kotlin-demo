@@ -1,4 +1,4 @@
-import bugs.WeirdJava
+package bugs
 
 fun main(args: Array<String>) {
   // Doesn't compile:
