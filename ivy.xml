@@ -15,5 +15,6 @@
     <dependency org="com.nhaarman" name="mockito-kotlin" rev="0.3.0" conf="test->default">
       <exclude org="org.jetbrains.kotlin"/>
     </dependency>
+    <dependency org="org.jetbrains.kotlin" name="kotlin-test" rev="1.0+" conf="test->default"/>
   </dependencies>
 </ivy-module>
