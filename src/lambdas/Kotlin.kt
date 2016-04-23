@@ -10,7 +10,7 @@ object Kotlin {
 fun main(args: Array<String>) {
   Kotlin.helloLambda { 1 }
 
-  // Kotlin.helloSAM { 1 }
+//   Kotlin.helloSAM { 1 } - impossible
 
   Kotlin.helloSAM(object: Function<Int, Int> {
     override fun apply(t: Int?): Int? {
