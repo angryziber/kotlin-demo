@@ -1,8 +1,5 @@
 
-import annotations.Ann
 import kotlin.concurrent.thread
-import kotlin.reflect.jvm.javaField
-import kotlin.reflect.memberProperties
 
 const val X: String = "z"
 
@@ -19,9 +16,6 @@ class Hello {
   private val y: String
     get() = x
 
-  @Ann val z: Int = 1
-    @Ann get() = field
-
   fun main() {
     x = "b"
     print(x)
@@ -29,9 +23,6 @@ class Hello {
 }
 
 fun int2int(x: Int): Int = x + 1
-
-fun hello(x: java.util.function.Function<Int, Int>) = x.apply(1)
-fun hello2(x: (Int) -> Int) = x(1)
 
 fun main(args: Array<String>) {
   var x: (Int) -> Int = { 1 + it }
@@ -55,7 +46,4 @@ fun main(args: Array<String>) {
   thread {
     print(123)
   }
-
-
-  println(Hello::class.memberProperties.find { it.name == "z" }?.javaField?.annotations?.get(0)?.annotationClass)
 }
