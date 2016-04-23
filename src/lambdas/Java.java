@@ -7,7 +7,7 @@ public class Java {
     return f.apply(1);
   }
 
-  public static void main(String[] args) {
+  public static void main(String...args) {
     Java.hello(i -> 1);
     Kotlin.INSTANCE.helloLambda(i -> 1);
     Kotlin.INSTANCE.helloSAM(i -> 1);
