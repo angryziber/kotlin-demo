@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
   x = ::int2int
   println(x(2))
 
-  x = fun(x) = x + 2
+  x = fun(x) = x + 1
   println(x(2))
 
   main2()
