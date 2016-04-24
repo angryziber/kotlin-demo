@@ -8,6 +8,8 @@ object Kotlin {
 }
 
 fun main(args: Array<String>) {
+  Java.hello { 1 }
+
   Kotlin.helloLambda { 1 }
 
 //   Kotlin.helloSAM { 1 } - impossible
@@ -17,6 +19,4 @@ fun main(args: Array<String>) {
       return 1
     }
   })
-
-  Java.hello { 1 }
 }
