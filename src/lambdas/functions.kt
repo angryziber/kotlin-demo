@@ -1,6 +1,6 @@
 package lambdas
 
-fun int2int(x: Int): Int = x + 1
+fun int2int(x: Int) = x + 1
 
 fun main(args: Array<String>) {
   var x: (Int) -> Int = { it + 1 }
