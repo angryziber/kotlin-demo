@@ -1,11 +1,11 @@
 package nullability
 
 class BooleanProvider() {
-  val b = true
+  val bool = true
 }
 
 fun main(args: Array<String>) {
   val provider: BooleanProvider? = null
   // if (provider?.b) println("true") - not Groovy
-  if (provider != null && provider.b) println("true")
+  if (provider != null && provider.bool) println("true")
 }
