@@ -9,7 +9,5 @@ class HelloTest {
     expect("ab") {
       "a" + "b"
     }
-
-    val r = Runnable { println("hello") }
   }
 }
