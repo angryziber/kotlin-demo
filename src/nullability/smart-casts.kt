@@ -1,15 +1,15 @@
 package nullability
 
 class Smart {
-  var x: String? = "abc"
+  var prop: String? = "abc"
 
   fun run() {
-    if (x != null) println(x?.substring(1, 2))
+    var local: String? = "def"
+    if (local != null) println(local.substring(1, 2))
 
-    var y: String? = "def"
-    if (y != null) println(y.substring(1, 2))
+    if (prop != null) println(prop?.substring(1, 2))
 
-    x?.let {
+    prop?.let {
       print(it.substring(1, 2))
     }
   }
