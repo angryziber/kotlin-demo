@@ -6,10 +6,8 @@ class EmptyClass
 
 class KotlinDate: Date()
 
-class KotlinImplements: Iterable<String> {
-  override fun iterator(): Iterator<String> {
-    throw UnsupportedOperationException()
-  }
+class KotlinImplements: Runnable {
+  override fun run() {}
 }
 
 fun main(args: Array<String>) {
