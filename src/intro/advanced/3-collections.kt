@@ -7,5 +7,5 @@ fun main(args: Array<String>) {
 
   // list.add(1) - impossible, use mutableListOf()
 
-  list.filter { it > 1 }.map { it.toString() }.groupBy { it.length }
+  list.filter { it > 1 }.map { it.toString() }.sortedBy { it.hashCode() }
 }
