@@ -7,4 +7,6 @@ class Properties {
   var numAsString: String
     get() = num.toString()
     set(value) { num = value.toInt() }
+
+  @JvmField val reallyNeedAField = 1
 }
