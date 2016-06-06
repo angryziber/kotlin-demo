@@ -4,10 +4,12 @@ object Singleton
 
 class Klass {
   companion object {
-    val HELLO = "World"
+    val hello = "World"
+
+    @JvmStatic val reallyNeedStatic = "static"
   }
 }
 
 fun main(args: Array<String>) {
-  println(Klass.HELLO)
+  println(Klass.hello)
 }
