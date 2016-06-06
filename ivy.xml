@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ivy-module version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
-  <info organisation="cc.redpen" module="redpen-intellij-plugin"/>
+  <info organisation="com.codeborne" module="kotlin-demo"/>
 
   <configurations>
     <conf name="default"/>
@@ -8,10 +8,6 @@
   </configurations>
 
   <dependencies defaultconf="default->default">
-    <dependency org="cc.redpen" name="redpen-core" rev="1.5.+">
-      <exclude org="org.slf4j"/>
-      <exclude org="org.json"/>
-    </dependency>
     <dependency org="com.nhaarman" name="mockito-kotlin" rev="0.3.0" conf="test->default">
       <exclude org="org.jetbrains.kotlin"/>
     </dependency>
