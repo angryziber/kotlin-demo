@@ -1,6 +1,6 @@
 package intro.advanced
 
-fun template(args: Array<String>) =
+fun template(vararg args: String) =
     html {
       head {
         title {+"XML encoding with Kotlin"}
@@ -31,5 +31,5 @@ fun template(args: Array<String>) =
     }
 
 fun main(args: Array<String>) {
-  println(template(arrayOf("Some", "content")))
+  println(template("Some", "content"))
 }
