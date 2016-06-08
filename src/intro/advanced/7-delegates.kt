@@ -1,6 +1,9 @@
 package intro.advanced
 
+import java.sql.Driver
 import kotlin.properties.Delegates.observable
+
+class Decorator(driver: Driver): Driver by driver
 
 class Lazy {
   val hello by lazy { "very lazy" }
