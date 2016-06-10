@@ -9,6 +9,6 @@ Run first:
 See:
 
 * [src/intro](src/intro) for cheat sheet (basic code examples)
-* [src/intro/advances](src/intro/advances) for more exciting cool features of Kotlin
+* [src/intro/advanced](src/intro/advanced) for more exciting cool features of Kotlin
 * [test](test) for JUnit, kotlin-test and Mockito (+mockito_kotlin) usage examples
  
