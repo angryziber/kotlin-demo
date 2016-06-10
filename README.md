@@ -2,6 +2,10 @@
 
 ## [See the slides](https://docs.google.com/presentation/d/1c2cJEoxWISOxC2rdXjj-VyDrXOT14DW06sQuLt1BIfg)
 
+Run first:
+ 
+`ant deps`
+
 See:
 
 * `src/intro` for cheat sheet (basic code examples)
