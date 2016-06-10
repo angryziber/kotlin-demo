@@ -9,6 +9,7 @@ public class Java {
 
   public static void main(String...args) {
     Java.hello(i -> 1);
+
     Kotlin.INSTANCE.helloLambda(i -> 1);
     Kotlin.INSTANCE.helloSAM(i -> 1);
   }
