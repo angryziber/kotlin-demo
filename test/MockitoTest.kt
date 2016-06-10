@@ -6,7 +6,7 @@ import java.util.concurrent.Executor
 import kotlin.test.assertEquals
 
 class MockitoTest {
-  @Test fun name() {
+  @Test fun mockitoKotlin() {
     val executor = mock<Executor>()
     whenever(executor.execute(any())).then { print("Executed!") }
 
