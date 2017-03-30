@@ -14,8 +14,10 @@ fun main(args: Array<String>) {
 
 //   Kotlin.helloSAM { 1 } - impossible
 
+  Kotlin.helloSAM(Function<Int, Int> { 1 })
+
   Kotlin.helloSAM(object: Function<Int, Int> {
-    override fun apply(t: Int?): Int? {
+    override fun apply(t: Int): Int {
       return 1
     }
   })
