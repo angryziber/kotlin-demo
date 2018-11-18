@@ -9,6 +9,6 @@ class JavaStreams {
 }
 
 fun main(args: Array<String>) {
-  val list = JavaStreams().list as java.util.Collection<Int>
-  println(list.stream().filter { it > 2 }.collect(toList()))
+  val list = JavaStreams().list
+  println(list.stream().filter { it > 2 }.collect(toList()) as Any)
 }
