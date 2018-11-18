@@ -1,6 +1,6 @@
 
-import org.junit.Ignore
-import org.junit.Test
+import org.junit.jupiter.api.Disabled
+import org.junit.jupiter.api.Test
 import org.mockito.Matchers.any
 import org.mockito.Mockito.`when`
 import org.mockito.Mockito.mock
@@ -12,7 +12,7 @@ open class RawMockitoTest {
     open fun mockMe(s: String): String = s
   }
 
-  @Test @Ignore("Doesn't work with non-open class")
+  @Test @Disabled("Doesn't work with non-open class")
   fun rawMockito() {
     val o = mock(KotlinClass::class.java)
 
