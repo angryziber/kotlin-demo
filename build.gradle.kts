@@ -37,6 +37,7 @@ dependencies {
   implementation("org.jetbrains.kotlin:kotlin-reflect")
   implementation("org.jetbrains.kotlin:kotlin-script-runtime")
   implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1")
+  implementation("io.ktor:ktor-client-cio:1.0.0")
   testImplementation("org.jetbrains.kotlin:kotlin-test")
   testImplementation("com.nhaarman:mockito-kotlin:1.6.0") {
     exclude("org.jetbrains.kotlin")
