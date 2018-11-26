@@ -9,11 +9,11 @@ plugins {
 sourceSets {
   getByName("main").apply {
     java.srcDirs("src")
-    resources.srcDirs("src")
+//    resources.srcDirs("src")
   }
   getByName("test").apply {
     java.srcDirs("test")
-    resources.srcDirs("test")
+//    resources.srcDirs("test")
   }
 }
 
@@ -39,7 +39,7 @@ dependencies {
   implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1")
   implementation("io.ktor:ktor-client-cio:1.0.0")
   testImplementation("org.jetbrains.kotlin:kotlin-test")
-  testImplementation("com.nhaarman:mockito-kotlin:1.6.0") {
+  testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.0.0") {
     exclude("org.jetbrains.kotlin")
   }
   testImplementation("io.mockk:mockk:1.8.13.kotlin13")

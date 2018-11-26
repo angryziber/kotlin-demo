@@ -8,8 +8,8 @@ import kotlin.test.assertEquals
 
 open class RawMockitoTest {
   // mockito can only mock open classes and methods
-  open class KotlinClass {
-    open fun mockMe(s: String): String = s
+  class KotlinClass {
+    fun mockMe(s: String): String = s
   }
 
   @Test @Disabled("Doesn't work with non-open class")
