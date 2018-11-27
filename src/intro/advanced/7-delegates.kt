@@ -13,7 +13,7 @@ class Observable {
   val hello by observable("") { prop, old, new -> print("$old -> $new") }
 }
 
-class PersonAsMap(val data: Map<String, String>) {
+class PersonAsMap(data: Map<String, String>) {
   val firstName by data
   val lastName by data
 
@@ -21,7 +21,7 @@ class PersonAsMap(val data: Map<String, String>) {
     get() = "$firstName $lastName"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val data = mapOf("firstName" to "Anton", "lastName" to "Keks")
   val person = PersonAsMap(data)
   println(person.firstName)
