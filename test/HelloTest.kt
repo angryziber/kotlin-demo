@@ -4,7 +4,7 @@ import kotlin.test.expect
 
 class HelloTest {
   @Test
-  fun name() {
+  fun `finally nice test names`() {
     assertEquals("a", "a")
     expect("ab") {
       "a" + "b"
