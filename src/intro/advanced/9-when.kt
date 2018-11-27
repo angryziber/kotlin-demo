@@ -2,7 +2,7 @@ package intro.advanced
 
 data class Person(val name: String)
 
-fun main(args: Array<String>) {
+fun main() {
   val x: Any? = null
   when (x) {
     "" -> println("empty String")
