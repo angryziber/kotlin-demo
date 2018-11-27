@@ -1,4 +1,4 @@
-
+package mocking
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import org.mockito.ArgumentMatchers.any
@@ -23,7 +23,17 @@ class RawMockitoTest {
     val o = mock(KotlinClass::class.java)
 
     // Mockito matchers return nulls, which fail Kotlin's runtime null checks
-    `when`(o.mockMe(any(String::class.java) ?: "")).thenReturn("hello")
+    `when`(o.mockMe(any() ?: "")).thenReturn("hello")
+
+    assertEquals("hello", o.mockMe("any string"));
+  }
+
+  @Test
+  fun allopenPlugin() {
+    val o = mock(MockableKotlinClass::class.java)
+
+    // Mockito matchers return nulls, which fail Kotlin's runtime null checks
+    `when`(o.mockMe(any() ?: "")).thenReturn("hello")
 
     assertEquals("hello", o.mockMe("any string"));
   }
@@ -32,4 +42,11 @@ class RawMockitoTest {
   class KotlinClass {
     fun mockMe(s: String): String = s
   }
+
+  @Mockable
+  class MockableKotlinClass {
+    fun mockMe(s: String): String = s
+  }
 }
+
+annotation class Mockable

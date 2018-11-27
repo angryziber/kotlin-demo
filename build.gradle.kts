@@ -3,17 +3,19 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
   val kotlinVersion = "1.3.10"
   id("org.jetbrains.kotlin.jvm") version kotlinVersion
-  id("org.jetbrains.kotlin.plugin.jpa") version kotlinVersion
+  id("org.jetbrains.kotlin.plugin.allopen") version kotlinVersion
+}
+
+allOpen {
+  annotation("mocking.Mockable")
 }
 
 sourceSets {
   getByName("main").apply {
     java.srcDirs("src")
-//    resources.srcDirs("src")
   }
   getByName("test").apply {
     java.srcDirs("test")
-//    resources.srcDirs("test")
   }
 }
 
