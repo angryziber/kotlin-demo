@@ -9,7 +9,7 @@ data class Person(val name: String, val birthDay: LocalDate, val hobbies: List<S
 
 @Language("HTML")
 fun typeSafeTemplate(person: Person) = """
-  <html lang="en">
+  <html>
     <body>
       <h1>Hello, ${+person.name}, born on ${+person.birthDay.format()}</h1>
       <h3>Hobbies</h3>
@@ -23,8 +23,8 @@ fun typeSafeTemplate(person: Person) = """
 """
 
 fun main() {
-  val customer = Person("Anton", LocalDate.of(1982, 10, 21), listOf("Hobby 1", "Hobby 2"))
-  println(typeSafeTemplate(customer))
+  val person = Person("Anton", LocalDate.of(1982, 10, 21), listOf("Hobby 1", "Hobby 2"))
+  println(typeSafeTemplate(person))
 }
 
 // DSL

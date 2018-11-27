@@ -66,6 +66,8 @@ abstract class BodyTag(name: String) : TagWithText(name) {
   fun b(init: B.() -> Unit) = initTag(B(), init)
   fun p(init: P.() -> Unit) = initTag(P(), init)
   fun h1(init: H1.() -> Unit) = initTag(H1(), init)
+  fun ul(init: UL.() -> Unit) = initTag(UL(), init)
+  fun li(init: LI.() -> Unit) = initTag(LI(), init)
   fun a(href: String, init: A.() -> Unit) {
     val a = initTag(A(), init)
     a.href = href
@@ -76,6 +78,8 @@ class Body() : BodyTag("body")
 class B() : BodyTag("b")
 class P() : BodyTag("p")
 class H1() : BodyTag("h1")
+class UL() : BodyTag("ul")
+class LI() : BodyTag("li")
 
 class A() : BodyTag("a") {
   public var href: String
