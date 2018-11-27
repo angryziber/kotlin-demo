@@ -4,6 +4,6 @@ class RuntimeNotNull {
   fun hello(notNull: String) = print(notNull)
 }
 
-fun main(args: Array<String>) {
+fun main() {
   RuntimeNotNull().hello(null as String)
 }

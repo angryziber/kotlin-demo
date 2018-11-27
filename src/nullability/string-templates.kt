@@ -1,7 +1,7 @@
 package nullability
 
-fun main(args: Array<String>) {
+fun main() {
   val x = null
-  println("${x}") // could be empty
+  println("$x") // could be empty
 }
 
