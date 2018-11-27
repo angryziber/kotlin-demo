@@ -1,11 +1,9 @@
 
-import com.nhaarman.mockitokotlin2.any
-import com.nhaarman.mockitokotlin2.mock
-import com.nhaarman.mockitokotlin2.verify
-import com.nhaarman.mockitokotlin2.whenever
+import com.nhaarman.mockitokotlin2.*
 import org.junit.jupiter.api.Test
 import java.util.*
 import java.util.concurrent.Executor
+import kotlin.test.assertEquals
 
 class MockitoKotlinTest {
   @Test fun whenever() {
@@ -24,5 +22,12 @@ class MockitoKotlinTest {
 
     verify(date).time = 5L
     verify(date).time = any()
+  }
+
+  @Test fun coolWay() {
+    val date = mock<Date> {
+      on {time} doReturn 123
+    }
+    assertEquals(123L, date.time)
   }
 }
