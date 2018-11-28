@@ -10,5 +10,12 @@ class JavaStreams {
 
 fun main(args: Array<String>) {
   val list = JavaStreams().list
+
   println(list.stream().filter { it > 2 }.collect(toList()) as Any)
+
+  // vs
+
+  println(list.filter { it > 2 })
+
+  println(list.asSequence().filter { it > 2 }.toList())
 }
