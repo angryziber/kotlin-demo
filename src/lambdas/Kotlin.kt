@@ -4,7 +4,8 @@ import java.util.function.Function
 
 object Kotlin {
   fun helloLambda(f: (Int) -> Int) = f(1)
-  fun helloSAM(f: java.util.function.Function<Int, Int>) = f.apply(1)
+  fun helloKotlinSAM(f: Function1<Int, Int>) = f(1)
+  fun helloJavaSAM(f: java.util.function.Function<Int, Int>) = f.apply(1)
 }
 
 fun main(args: Array<String>) {
@@ -12,11 +13,11 @@ fun main(args: Array<String>) {
 
   Kotlin.helloLambda { 1 }
 
-//   Kotlin.helloSAM { 1 } - impossible
+  Kotlin.helloKotlinSAM { 1 }
 
-  Kotlin.helloSAM(Function<Int, Int> { 1 })
+  Kotlin.helloJavaSAM(Function { 1 })
 
-  Kotlin.helloSAM(object: Function<Int, Int> {
+  Kotlin.helloJavaSAM(object: Function<Int, Int> {
     override fun apply(t: Int): Int {
       return 1
     }

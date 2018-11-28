@@ -11,6 +11,6 @@ public class Java {
     Java.hello(i -> 1);
 
     Kotlin.INSTANCE.helloLambda(i -> 1);
-    Kotlin.INSTANCE.helloSAM(i -> 1);
+    Kotlin.INSTANCE.helloJavaSAM(i -> 1);
   }
 }
