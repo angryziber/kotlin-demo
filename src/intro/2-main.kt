@@ -1,5 +1,5 @@
 package intro
 
-fun main(args: Array<String>) {
+fun main() {
   print("Hello World")
 }

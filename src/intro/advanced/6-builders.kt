@@ -32,6 +32,6 @@ fun template(vararg args: String) =
     }
   }
 
-fun main(args: Array<String>) {
+fun main() {
   println(template("Some", "content"))
 }

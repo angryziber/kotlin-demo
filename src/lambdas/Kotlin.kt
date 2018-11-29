@@ -8,7 +8,7 @@ object Kotlin {
   fun helloJavaSAM(f: java.util.function.Function<Int, Int>) = f.apply(1)
 }
 
-fun main(args: Array<String>) {
+fun main() {
   Java.hello { 1 }
 
   Kotlin.helloLambda { 1 }

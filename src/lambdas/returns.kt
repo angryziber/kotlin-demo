@@ -8,7 +8,7 @@ inline fun helloNoInline(noinline block: () -> Unit) = hello(block)
 
 inline fun helloCrossInline(crossinline block: () -> Unit) = Runnable { block() }.run()
 
-fun main(args: Array<String>) {
+fun main() {
   hello {
     println("hello")
     // return - impossible

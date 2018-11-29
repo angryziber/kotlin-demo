@@ -1,6 +1,6 @@
 package bugs
 
-fun main(args: Array<String>) {
+fun main() {
   // Doesn't compile:
   // WeirdJava.Api.run();
 

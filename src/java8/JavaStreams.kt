@@ -8,7 +8,7 @@ class JavaStreams {
   val range = 1..10
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val list = JavaStreams().list
 
   println(list.stream().filter { it > 2 }.collect(toList()) as Any)

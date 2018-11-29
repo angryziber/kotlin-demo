@@ -10,6 +10,6 @@ class Klass {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   println(Klass.hello)
 }

@@ -1,6 +1,6 @@
 package intro.advanced
 
-fun main(args: Array<String>) {
+fun main() {
   val list = listOf(1, 2, 3)
   println(list is kotlin.collections.List<*>)
   println(list is java.util.List<*>)

@@ -1,8 +1,8 @@
 package intro.advanced
 
-fun main(args: Array<String>) {
-  var notNull: String = ""
-  var nullable: String? = null
+fun main() {
+  val notNull: String = ""
+  val nullable: String? = null
 
   println(notNull.length)
   println(nullable?.length)

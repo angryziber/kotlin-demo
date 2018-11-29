@@ -2,7 +2,7 @@ package intro.advanced
 
 import java.io.ByteArrayInputStream
 
-fun main(args: Array<String>) {
+fun main() {
   // These are all library functions
 
   with("string") {

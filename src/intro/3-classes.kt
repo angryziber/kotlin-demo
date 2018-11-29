@@ -10,6 +10,6 @@ class KotlinImplements: Runnable {
   override fun run() {}
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val instance = EmptyClass()
 }

@@ -1,6 +1,6 @@
 package intro.advanced
 
-fun main(args: Array<String>) {
+fun main() {
   var counter = 0
   Runnable {
     counter++

@@ -2,7 +2,7 @@ package lambdas
 
 fun int2int(x: Int) = x + 1
 
-fun main(args: Array<String>) {
+fun main() {
   var x: (Int) -> Int = { it + 1 }
   println(x(2))
 
