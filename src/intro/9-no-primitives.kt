@@ -1,6 +1,7 @@
 package intro
 
-fun main(args: Array<String>) {
-  val x: Int = 5
-  println(x.toShort())
+fun main() {
+  val i: Int = 5     // int in Java
+  val i2: Int? = 5   // Integer in Java
+  println(i.inc())
 }
