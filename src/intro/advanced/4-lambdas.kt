@@ -16,4 +16,8 @@ fun main() {
   ByteArrayInputStream("a".toByteArray()).use {
     // auto-closing
   }
+
+  Person("Anton").apply {
+    println(name)
+  }
 }
