@@ -6,7 +6,7 @@ import kotlin.reflect.KClass
 class MyService {
   val superService: SuperService = inject()
 
-  fun doSomething() = superService.toString()
+  fun doSomething() = superService.megaStuff()
 }
 
 object Injector {
@@ -18,5 +18,5 @@ object Injector {
 
 fun main() {
   Injector.bind(SuperService::class to DuperService())
-  println(MyService().doSomething())
+  MyService().doSomething()
 }
